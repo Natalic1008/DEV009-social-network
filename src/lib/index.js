@@ -5,7 +5,6 @@ import { app } from './initializeFirebase.js';
 
 const auth = getAuth(app);
 
-
 export const registrarUsuario = (email, pass) => {
   try {
     createUserWithEmailAndPassword(auth, email, pass);
